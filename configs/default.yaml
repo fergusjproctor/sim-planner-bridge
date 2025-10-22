@@ -1,0 +1,15 @@
+planner:
+  type: "grid"                 # or "gpt", "symbolic"
+  checkpoint: "checkpoints/planner.ckpt"
+  device: "auto"
+
+simulator:
+  type: "virtualhome"          # or "habitat", "ai2thor"
+  executable: "/path/to/VirtualHome.app"
+  port: "8080"
+  headless: true
+
+experiment:
+  env_id: 0
+  goal: "make coffee"
+  seed: 123

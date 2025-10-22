@@ -49,6 +49,8 @@ conda activate simbridge
 pip install -e external/GRID
 pip install -e external/VirtualHome
 pip install -e .
+```
+
 
 # Repository Structure
 

@@ -1,0 +1,45 @@
+{
+  "version": "1.1",
+  "nodes": [
+    { "id": 0, "type": "floor", "attributes": { "label": "floor" }, "operation": [] },
+
+    { "id": 1, "type": "room", "attributes": { "label": "livingroom" }, "operation": [] },
+
+    { "id": 2, "type": "large_object", "attributes": { "label": "sofa" }, "operation": ["place_to"] },
+    { "id": 3, "type": "large_object", "attributes": { "label": "coffee_table" }, "operation": ["place_to"] },
+    { "id": 4, "type": "large_object", "attributes": { "label": "bookshelf" }, "operation": ["place_to"] },
+
+    { "id": 5, "type": "small_object", "attributes": { "label": "tv" }, "operation": [] },
+    { "id": 6, "type": "small_object", "attributes": { "label": "lamp" }, "operation": [] },
+    { "id": 7, "type": "small_object", "attributes": { "label": "mug" }, "operation": [] },
+    { "id": 8, "type": "small_object", "attributes": { "label": "remote" }, "operation": [] },
+    { "id": 9, "type": "small_object", "attributes": { "label": "book" }, "operation": [] },
+    { "id": 10, "type": "small_object", "attributes": { "label": "vase" }, "operation": [] },
+    { "id": 11, "type": "small_object", "attributes": { "label": "apple" }, "operation": [] },
+    { "id": 12, "type": "small_object", "attributes": { "label": "bottle" }, "operation": [] },
+    { "id": 13, "type": "small_object", "attributes": { "label": "plate" }, "operation": [] },
+    { "id": 14, "type": "small_object", "attributes": { "label": "notebook" }, "operation": [] },
+    { "id": 15, "type": "small_object", "attributes": { "label": "pen" }, "operation": [] },
+    { "id": 16, "type": "small_object", "attributes": { "label": "plant" }, "operation": [] }
+  ],
+  "edges": [
+    { "from_id": 0, "to_id": 1, "relation_type": "in" },
+
+    { "from_id": 1, "to_id": 2, "relation_type": "in" },
+    { "from_id": 1, "to_id": 3, "relation_type": "in" },
+    { "from_id": 1, "to_id": 4, "relation_type": "in" },
+
+    { "from_id": 5, "to_id": 4, "relation_type": "on" },
+    { "from_id": 6, "to_id": 3, "relation_type": "on" },
+    { "from_id": 7, "to_id": 3, "relation_type": "on" },
+    { "from_id": 8, "to_id": 3, "relation_type": "on" },
+    { "from_id": 9, "to_id": 4, "relation_type": "on" },
+    { "from_id": 10, "to_id": 3, "relation_type": "on" },
+    { "from_id": 11, "to_id": 13, "relation_type": "on" },
+    { "from_id": 12, "to_id": 3, "relation_type": "on" },
+    { "from_id": 13, "to_id": 3, "relation_type": "on" },
+    { "from_id": 14, "to_id": 3, "relation_type": "on" },
+    { "from_id": 15, "to_id": 3, "relation_type": "on" },
+    { "from_id": 16, "to_id": 4, "relation_type": "on" }
+  ]
+}

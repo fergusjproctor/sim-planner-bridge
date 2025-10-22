@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Debug VH to GRID Transform",
+      "program": "${workspaceFolder}/orchestrator/transforms/vh_to_grid_graphs.py",
+      "args": [
+        "--input",
+        "${workspaceFolder}/test_inputs/environment_graph_scene4.json",
+        "--out-sg", 
+        "${workspaceFolder}/test_outputs/scene_graph_scene4.json",
+        "--out-rg",
+        "${workspaceFolder}/test_outputs/relation_graph_scene4.json",
+        "--pretty"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}
